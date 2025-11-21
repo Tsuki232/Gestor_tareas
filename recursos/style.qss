@@ -1,0 +1,66 @@
+/* Estilo global para la aplicación - colores suaves y botones modernos */
+QWidget {
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 #f6f9ff, stop:1 #eef3f9);
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #222222;
+}
+
+QLabel#appTitle {
+    font-size: 16pt;
+    font-weight: 700;
+    color: #153243;
+}
+
+QLabel#sectionHeader {
+    font-size: 11pt;
+    font-weight: 600;
+    color: #153243;
+}
+
+QPushButton {
+    background: #1976d2;
+    color: white;
+    border: 0px solid #155a96;
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-size: 11pt;
+    min-height: 42px;
+}
+QPushButton:hover {
+    background: #1565c0;
+}
+QPushButton:pressed {
+    background: #0d47a1;
+}
+
+QPushButton#secondary {
+    background: #4caf50;
+}
+QPushButton#danger {
+    background: #e53935;
+}
+
+QListWidget, QTreeView, QTableView {
+    background: white;
+    border: 1px solid #dfe7ef;
+    border-radius: 6px;
+}
+
+QInputDialog QLabel, QMessageBox QLabel {
+    color: #222222;
+}
+
+/* Fine tune for input dialogs */
+QLineEdit {
+    padding: 6px;
+    border: 1px solid #cdd9e6;
+    border-radius: 4px;
+}
+
+/* Small cards */
+QWidget#card {
+    background: rgba(255,255,255,0.85);
+    border-radius: 8px;
+    border: 1px solid rgba(0,0,0,0.05);
+    padding: 8px;
+}
